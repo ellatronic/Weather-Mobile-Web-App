@@ -1,0 +1,20 @@
+html {
+	background-color: white;
+}
+
+h1 {
+	font-family: sans-serif;
+	font-size: 20px;
+	color: white;
+}
+
+#container {
+	width: 300px;
+	height: 600px;
+	color: white;
+	margin-right: 50px;
+	text-align: center;
+	display: blox;
+	
+
+}
