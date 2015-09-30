@@ -2,19 +2,20 @@
 <html>
 <head>
 <link rel="manifest" href="/manifest.json">
-	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/getweather.js"></script>	
 <head>
+
 <nav></nav>
+
 <body>
 <div id="linechart_material"></div>
-<form>
 	<div id = "zipBox">
-		<input onkeypress="enterButton()" id="zipcode" class = "code" type="text" name="name" placeholder="Enter your zip code" required>
+		<input id="zipcode" class = "code" type="text" name="name" placeholder="Enter your zip code" required>
 	</div>
 	<div class= "sendbutton">
-            <input id = "button" type="submit" value="Send">
+            <input id="button" type="submit" value="Send">
      </div>
-</form>
 
 <div class = "box">
 		<div id = "cityName"><h1></h1></div>
@@ -23,9 +24,6 @@
 	<div id = "forecast"> 
 	<div id = "tableDisplay">
 		<table>
-		
-		 
-		
 		</table>
 	</div>	
 </div>	
