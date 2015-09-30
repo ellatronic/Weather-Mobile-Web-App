@@ -1,32 +1,47 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<link rel="manifest" href="/manifest.json">
+<link rel="stylesheet" href= "../Weather-Mobile-Web-App/css/displayinfo.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script type="text/javascript" src="js/getweather.js"></script>	
 <head>
 
 <nav></nav>
-
 <body>
-<div id="linechart_material"></div>
-	<div id = "zipBox">
-		<input id="zipcode" class = "code" type="text" name="name" placeholder="Enter your zip code" required>
+	
+		<div id="box">
+		
+			<div id="displayweather">
+				<div id="date"></div>
+				<div id = "zipBox">
+				<input id="zipcode" class = "code" type="text" name="name" placeholder="Enter your zip code" required>
+				</div>
+					<div class= "sendbutton">
+					<input id="button" type="submit" value="Send">
+				</div>
+			
+		<div id= "fnumber">12 &#8457</div>
+		<div id= "cityName"></div>
+		<div id= "forecast"></div>
+		
+			<table id="days" class="weekday">
+				<tr>
+					<td class="letter">S</td>
+					<td class="letter">M</td>
+					<td class="letter">T</td>
+					<td class="letter">W</td>
+					<td class="letter">T</td>
+					<td class="letter">F</td>
+					<td class="letter">S</td>
+				</tr>
+	</table>
 	</div>
-	<div class= "sendbutton">
-            <input id="button" type="submit" value="Send">
-     </div>
+		<div id="day-frame"> 
+			<table id="icons" class="iconbox"> 
 
-<div class = "box">
-		<div id = "cityName"><h1></h1></div>
-		<div id = "tempature"></div>
+			</table> 
+		</div>		
 	</div>
-	<div id = "forecast"> 
-	<div id = "tableDisplay">
-		<table>
-		</table>
-	</div>	
-</div>	
 	
 </body>
 	

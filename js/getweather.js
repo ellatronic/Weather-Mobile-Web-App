@@ -26,3 +26,10 @@ $(document).ready(function(){
 
 	
 })
+
+
+//DATE
+
+var d = new Date();
+var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+document.getElementById("date").innerHTML = days[d.getDay()];
