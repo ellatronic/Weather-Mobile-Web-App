@@ -148,12 +148,10 @@ html {
 	width: 205px;
 	height: 40px;
 }
-
 .sendbutton {
 	padding-top: 10px;
 	padding-left: 20%;	
 }
-
 input, textarea {
 	position: relative;
 	text-align: center;
@@ -169,4 +167,30 @@ input, textarea {
 	border-top-right-radius: 2px;
 	border-bottom-right-radius: 2px;
 	border-bottom-left-radius: 2px;
+}
+
+
+
+#weathericons {
+	color: black;
+	float:left;
+	text-align: center;
+	padding: 10px;
+	padding-top: 10px;
+	margin-right: 12px;
+	margin-top: 12px;
+	font-family:sans-serif;
+	/*outline: 1px solid white;*/
+	width:20px;
+	height:20px;
+}
+
+
+#icon {
+	color: black;
+	float:left;
+	padding: 25px;
+	margin-right: 5px;
+	align-content: stretch;
+	clear:both;
 }
