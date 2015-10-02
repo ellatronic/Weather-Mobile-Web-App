@@ -3,13 +3,10 @@ $(document).ready(function(){
 
 	//get today's day of the week
 	function getDay() {
-		var days = ["Su","M","Tu","W","Th","F","Sa"];
+		var days = ["SUN","MON","TUE","WED","THUR","FRI","SAT","SUN","MON","TUE","WED","THU","FRI","SAT"];
 		var d = new Date();
-		console.log(d);
 		var dayNum = d.getDay();
-		console.log(dayNum);
 		$("#date").text(days[dayNum]);
-		console.log(days[dayNum]);
 
 		//get weather data
 		function getWeather(zipCode) {
@@ -30,12 +27,15 @@ $(document).ready(function(){
 							var dayTemp = forecastData.list[i].temp.day;
 							console.log("Forecast Data for Day " + i + " " + dayTemp);
 							var dayCond = forecastData.list[i].weather[0].main;
+							var icon = forecastData.list[i].weather[0].icon;
 							console.log("Weather conditions for Day " + i + " " + dayCond);
 							//populate days of the week
-							$("#days").append(
-							"<div>" + days[dayNum] + "</div>" +
-							"<div>" + dayCond + "</div>" +
-							"<div>" + dayTemp + " &#8457</div>");
+							$("#weathericons tr").append(
+								"<td class=\"weather-icons icon-" + icon + "\"></td>"
+							);
+							$("#days tr").append(
+								"<td class=\"letter\">" + days[dayNum + i] + "</td>"
+							);
 						}
 						var day0Temp = forecastData.list[0].temp.day;
 						console.log(day0Temp);
@@ -54,3 +54,6 @@ $(document).ready(function(){
 	}
 	$('#button').click(search);	
 })
+
+
+
