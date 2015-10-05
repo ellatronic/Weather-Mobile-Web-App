@@ -8,6 +8,11 @@ $(document).ready(function(){
 		var dayNum = d.getDay();
 		$("#date").text(days[dayNum]);
 
+		function float2int (value) {
+    		return value | 0;
+		}
+
+
 		//get weather data
 		function getWeather(zipCode) {
 				//get current weather condiditons
@@ -25,11 +30,14 @@ $(document).ready(function(){
 					.done(function(forecastData) {
 						for (i = 0; i < 7; i++) {
 							var dayTemp = forecastData.list[i].temp.day;
+							var dayTemp = float2int(dayTemp);
 							console.log("Forecast Data for Day " + i + " " + dayTemp);
 							var dayCond = forecastData.list[i].weather[0].main;
 							var icon = forecastData.list[i].weather[0].icon;
 							console.log("Weather conditions for Day " + i + " " + dayCond);
+							
 							//populate days of the week
+							$("#temps").append("<td class=\"letter\">" + dayTemp + "</td>");
 							$("#weathericons tr").append(
 								"<td class=\"weather-icons icon-" + icon + "\"></td>"
 							);
