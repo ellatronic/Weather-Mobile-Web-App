@@ -67,6 +67,17 @@ div.displayweather {
 	bottom: 0px;
 }
 
+.temps {
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-right: 0%;
+	padding-left: 5%;
+	clear:both;
+	text-align: center;
+	font-weight: bold;
+	bottom: 0px;
+}
+
 #cityName {
 	font-family: sans-serif;
 	font-weight: bold;

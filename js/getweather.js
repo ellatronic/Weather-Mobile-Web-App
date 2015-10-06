@@ -8,6 +8,7 @@ $(document).ready(function(){
 		var dayNum = d.getDay();
 		$("#date").text(days[dayNum]);
 
+		//convert floats to ints
 		function float2int (value) {
     		return value | 0;
 		}
@@ -37,7 +38,7 @@ $(document).ready(function(){
 							console.log("Weather conditions for Day " + i + " " + dayCond);
 							
 							//populate days of the week
-							$("#temps").append("<td class=\"letter\">" + dayTemp + "</td>");
+							$("#temps").append("<td class=\"letter temps\">" + dayTemp + "</td>");
 							$("#weathericons tr").append(
 								"<td class=\"weather-icons icon-" + icon + "\"></td>"
 							);
