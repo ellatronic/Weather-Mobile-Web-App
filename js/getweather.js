@@ -32,10 +32,8 @@ $(document).ready(function(){
 						for (i = 0; i < 7; i++) {
 							var dayTemp = forecastData.list[i].temp.day;
 							var dayTemp = float2int(dayTemp);
-							console.log("Forecast Data for Day " + i + " " + dayTemp);
 							var dayCond = forecastData.list[i].weather[0].main;
 							var icon = forecastData.list[i].weather[0].icon;
-							console.log("Weather conditions for Day " + i + " " + dayCond);
 							
 							//populate days of the week
 							$("#temps").append("<td class=\"letter temps\">" + dayTemp + "</td>");
@@ -47,9 +45,6 @@ $(document).ready(function(){
 							);
 						}
 						var day0Temp = forecastData.list[0].temp.day;
-						console.log(day0Temp);
-						console.log(forecastData);
-						console.log(dayNum);
 					})
 		}
 
