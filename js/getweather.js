@@ -25,6 +25,8 @@ $(document).ready(function(){
 						$('#forecast').text(main);
 						var temp = data.main.temp;
 						$('#temp').text(temp);
+						var mainIcon = data.weather[0].icon;
+						$('#mainIcon').append("<div class=\"weather-icons icon-" + mainIcon + "\"></div>");
 				})
 				//get 7 day forecast
 				$.get('http://api.openweathermap.org/data/2.5/forecast/daily?q=' + zipCode + ',us&cnt=7&units=imperial&APPID=ded17c04cecada392fc437e96cea4205')
@@ -36,7 +38,7 @@ $(document).ready(function(){
 							var icon = forecastData.list[i].weather[0].icon;
 							
 							//populate days of the week
-							$("#temps").append("<td class=\"letter temps\">" + dayTemp + "</td>");
+							$("#temps").append("<td class=\"letter forecastTemps\">" + dayTemp + "</td>");
 							$("#weathericons tr").append(
 								"<td class=\"weather-icons icon-" + icon + "\"></td>"
 							);
@@ -54,9 +56,15 @@ $(document).ready(function(){
 	//call function using zip code
 	function search() {
 		searchZip = $('#zipcode').val();
+		$('#temps, #weathericons tr, #days tr, #mainIcon').empty();
 		getDay();
 	}
-	$('#button').click(search);	
+	$('#button').click(search);
+	$('#zipcode').keydown(function(e) {
+  		if(e.which == 13) {
+    	search();
+  	}
+});	
 })
 
 
