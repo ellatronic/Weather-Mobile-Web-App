@@ -34,18 +34,19 @@ div.displayweather {
 	color: black;
 }
 
-
 #fnumber {
 	font-family: sans-serif;
 	font-weight: lighter;
 	color: white;
 	font-size: 50px;
-	padding-top: 40%;
-	text-align: center;
+	padding-top: 20%;
+	margin-left: 50px;
+	margin-right: 20px;
+	text-align: right;
 	width: 300px;
-	height: 100px;
-	float: left;
-	margin-left: 10px;
+	height: 200px;
+	background-color: transparent;
+	float: right;
 }
 
 
@@ -78,24 +79,18 @@ div.displayweather {
 	width: 100px;
 	height: 100px;
 	background-color:transparent;
-	float:left;
-
-
+	background-repeat: no-repeat;
+	padding-left: 40px;
+	float: right;
+	
 }
 
 .forecastTemps {
 	margin-left: 20px;
 	width: 350px;
 	padding-left: 10px;
-	
-
 }
 
-#temp {
-
-float:left;
-
-}
 
 #cityName {
 	font-family: sans-serif;
@@ -105,6 +100,7 @@ float:left;
 	padding-bottom: 5%;
 	text-align: left;
 	padding-left: 10px;
+	margin-left: 25px;
 	color:white;
 	float: left;
 	position: absolute;
@@ -116,14 +112,16 @@ float:left;
 	font-family: sans-serif;
 	font-weight: lighter;
 	font-size: 30px;
-	padding-top: 60px;
+	padding-top: 160px;
 	padding-bottom: 3%;
 	text-align: left;
+	margin-left: 25px;
 	padding-left: 10px;
 	color: white;
 	width: 300px;
 	height: 200px;
 	position: fixed;
+	
 	
 }
 
@@ -204,7 +202,6 @@ input, textarea {
     right: 0;
     bottom: 0;
     background-size: contain;
-	
 }
 
 .icon-01d { /*clear*/
