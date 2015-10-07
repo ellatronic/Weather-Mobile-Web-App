@@ -37,7 +37,7 @@ div.displayweather {
 
 #fnumber {
 	font-family: sans-serif;
-	font-weight: bold;
+	font-weight: lighter;
 	color: white;
 	font-size: 50px;
 	padding-top: 40%;
@@ -74,11 +74,13 @@ div.displayweather {
 /*Feel free to change this part to make it better*/
 #mainIcon {
 	margin-top: 10%;
-	margin-left: 40%;
+	margin-left: 180px;
 	width: 100px;
 	height: 100px;
 	background-color:aqua;
 	float:left;
+
+
 }
 
 .forecastTemps {
@@ -168,10 +170,7 @@ input, textarea {
 	border-top-right-radius: 2px;
 	border-bottom-right-radius: 2px;
 	border-bottom-left-radius: 2px;
-	color: aliceblue;
-	
-	
-	
+	color: aliceblue;	
 }
 
 #weathericons {
@@ -189,10 +188,7 @@ input, textarea {
 	font-family: sans-serif;
 	text-align: center;
 	font-size: 20px;
-	
-	
 }
-
 
 .weather-icons {
 	color: black;
@@ -201,8 +197,13 @@ input, textarea {
 	font-size: 20px;
 	padding-right: 12px;
 	background-repeat: no-repeat;
-	width: 51px;
-	height: 51px;
+	width: 30px;
+	height: 30px;
+	top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: contain;
 	
 }
 
