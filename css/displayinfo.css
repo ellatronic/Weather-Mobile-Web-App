@@ -72,7 +72,7 @@ div.displayweather {
 }
 
 /*Feel free to change this part to make it better*/
-#mainIcon {
+#mainIcon div {
 	margin-top: 10%;
 	margin-left: 180px;
 	width: 100px;

@@ -26,7 +26,7 @@ $(document).ready(function(){
 						var temp = data.main.temp;
 						$('#temp').text(temp);
 						var mainIcon = data.weather[0].icon;
-						$('#mainIcon').append("<div class=\"weather-icons icon-" + mainIcon + "\"></div>");
+						$('#mainIcon').append("<div class=\"icon-" + mainIcon + "\"></div>");
 				})
 				//get 7 day forecast
 				$.get('http://api.openweathermap.org/data/2.5/forecast/daily?q=' + zipCode + ',us&cnt=7&units=imperial&APPID=ded17c04cecada392fc437e96cea4205')
