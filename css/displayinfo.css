@@ -40,6 +40,7 @@ div.displayweather {
 	color: white;
 	font-size: 50px;
 	padding-top: 20%;
+	margin-top: 10%;
 	margin-left: 50px;
 	margin-right: 50px;
 	text-align: right;
@@ -288,22 +289,40 @@ input, textarea {
 
 
 /*Desktop */
-
 @media screen and (min-width: 800px) {
 
+	#displayweather {
+	 position:absolute;
+     width: 1200px;
+	height: 750px;
+     left:50%;
+     margin:70px 0 0 100px;
+	}
+
+
+	#zipBox {
+		float: right;
+		font-family: sans-serif;
+		color: black;
+	}
 
 #fnumber {
+	clear: all;
 	font-family: sans-serif;
 	font-weight: lighter;
 	color: white;
 	font-size: 100px;
-	padding-top: 20%;
+	padding-top: 0px;
+	padding-right: 5%;
+	margin-left: 0px;
+	margin-right: 0px;
 	text-align: right;
 	width: 300px;
 	height: 100px;
 	background-color: transparent;
 	float: right;
-	}
+}
+
 #temps { 
 	float: left;
 	width: 1000px;
@@ -365,9 +384,7 @@ input, textarea {
 	color: white;
 	width: 300px;
 	height: 500px;
-	position: fixed;
-	
-	
+	position: fixed;	
 }
 	
 	.weekday {
@@ -383,11 +400,15 @@ input, textarea {
 	font-weight: bold;
 	background-color: black;
 	bottom: 0px;
+	margin-top: 10%;
 }
 	
-	
 	#mainIcon div {
-	margin-top: 5%;
+	position: absolute;
+	clear: all;
+	margin-right: 45%;
+	margin-left: 45%;
+	top: 10%;
 	text-align: center;
 	width: 200px;
 	height: 200px;
@@ -395,13 +416,21 @@ input, textarea {
 	background-repeat: no-repeat;
 	padding-left: 20px;
 	background-color:aqua;
-	
-}
-	#displayweather {
-	 position:absolute;
-     width: 1200px;
-	height: 750px;
-     left:50%;
-     margin:70px 0 0 100px;
 	}
+
+	#cityName {
+	font-family: sans-serif;
+	font-weight: medium;
+	font-size: 40px;
+	padding-top: 10px;
+	padding-bottom: 5%;
+	text-align: left;
+	padding-left: 10px;
+	margin-left: 25px;
+	color:white;
+	float: left;
+	position: absolute;
+	width: 300px;
+	height: 100px;
+}
 }
