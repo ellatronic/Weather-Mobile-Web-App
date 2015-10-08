@@ -1,14 +1,14 @@
 
 html {
 	background-color:black;
-	background: url(../img/cloudy.jpg) no-repeat center center fixed;
+	background: url(../img/) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	position:fixed;
 	overflow:hidden;	
-	background-color: black;	
+	background-color: deepskyblue;	
 }
 
 #displayweather {
@@ -90,7 +90,6 @@ div.displayweather {
 	width: 350px;
 	padding-left: 10px;
 }
-
 
 #cityName {
 	font-family: sans-serif;
