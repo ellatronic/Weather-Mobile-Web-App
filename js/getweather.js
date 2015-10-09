@@ -44,7 +44,6 @@ $(document).ready(function(){
 							$("#weathericons").append(
 								"<td class=\"weather-icons\"><img src=\"img/" + icon + ".png\"></td>"
 							);
-							console.log(icon);
 							$("#days").append(
 								"<td class=\"letter\">" + days[dayNum + i] + "</td>"
 							);
@@ -59,7 +58,7 @@ $(document).ready(function(){
 	//call function using zip code
 	function search() {
 		searchZip = $('#zipcode').val();
-		$('#temps, #weathericons tr, #days tr, #mainIcon').empty();
+		$('#temps, #weathericons, #days, #mainIcon').empty();
 		getDay();
 	}
 	$('#zipcode').keydown(function(e) {
