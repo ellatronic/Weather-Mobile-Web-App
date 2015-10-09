@@ -50,7 +50,6 @@ div.displayweather {
 	float: right;
 }
 
-
 .letter {
 	color: white;
 	font-family: sans-serif;
@@ -73,7 +72,7 @@ div.displayweather {
 	bottom: 0px;
 }
 
-/*Feel free to change this part to make it better*/
+
 #mainIcon div {
 	margin-top: 10%;
 	margin-left: 180px;
@@ -284,26 +283,22 @@ input, textarea {
 
 
 
-
-
-
-
 /*Desktop */
 @media screen and (min-width: 800px) {
 
 	#displayweather {
-	 position:absolute;
-     width: 1200px;
+	position:absolute;
+	width: 1200px;
 	height: 750px;
-     left:50%;
-     margin:70px 0 0 100px;
+	left:50%;
+	margin:70px 0 0 100px;
 	}
 
 
 	#zipBox {
-		float: right;
-		font-family: sans-serif;
-		color: black;
+	float: right;
+	font-family: sans-serif;
+	color: black;
 	}
 
 #fnumber {
@@ -336,7 +331,7 @@ input, textarea {
 	font-size: 16px;
 	padding-right: 10px;
 	font-weight: lighter;
-	}
+}
 	
 #weathericons {
 	float:left;
@@ -415,7 +410,7 @@ input, textarea {
 	background-color:transparent;
 	background-repeat: no-repeat;
 	padding-left: 20px;
-	background-color:aqua;
+	background-color:transparent;
 	}
 
 	#cityName {

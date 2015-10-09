@@ -6,6 +6,7 @@ $(document).ready(function(){
 		var days = ["SUN","MON","TUE","WED","THUR","FRI","SAT","SUN","MON","TUE","WED","THU","FRI","SAT"];
 		var d = new Date();
 		var dayNum = d.getDay();
+		
 
 		//convert floats to ints
 		function float2int (value) {
