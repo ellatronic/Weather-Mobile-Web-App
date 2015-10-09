@@ -38,11 +38,14 @@ $(document).ready(function(){
 							var icon = forecastData.list[i].weather[0].icon;
 							
 							//populate days of the week
-							$("#temps").append("<td class=\"letter forecastTemps\">" + dayTemp + "</td>");
-							$("#weathericons tr").append(
-								"<td class=\"weather-icons icon-" + icon + "\"></td>"
+							$("#temps").append(
+								"<td class=\"letter forecastTemps\">" + dayTemp + "</td>"
 							);
-							$("#days tr").append(
+							$("#weathericons").append(
+								"<td class=\"weather-icons\"><img src=\"img/" + icon + ".png\"></td>"
+							);
+							console.log(icon);
+							$("#days").append(
 								"<td class=\"letter\">" + days[dayNum + i] + "</td>"
 							);
 						}
@@ -59,7 +62,6 @@ $(document).ready(function(){
 		$('#temps, #weathericons tr, #days tr, #mainIcon').empty();
 		getDay();
 	}
-	$('#button').click(search);
 	$('#zipcode').keydown(function(e) {
   		if(e.which == 13) {
     	search();
