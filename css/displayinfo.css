@@ -11,7 +11,6 @@ html {
 	background-color: #0C76BF;	
 }
 
-
  #displayweather {
 	width: 400px;
 	height: 800px;
@@ -71,7 +70,6 @@ div.displayweather {
 	background-color: black;
 	bottom: 0px;
 }
-
 
 #mainIcon div {
 	margin-top: 10%;
@@ -149,10 +147,12 @@ div.displayweather {
 	width: 205px;
 	height: 40px;
 }
+
 .sendbutton {
 	padding-top: 10px;
 	padding-left: 20%;	
 }
+
 input, textarea {
 	position: relative;
 	text-align: center;
@@ -197,10 +197,10 @@ input, textarea {
 	width: 30px;
 	height: 30px;
 	top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-size: contain;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-size: contain;
 }
 
 .icon-01d { /*clear*/
@@ -292,14 +292,12 @@ input, textarea {
 	height: 750px;
 	left:50%;
 	margin:70px 0 0 100px;
-	}
-
-
+}
 	#zipBox {
 	float: right;
 	font-family: sans-serif;
 	color: black;
-	}
+}
 
 #fnumber {
 	clear: all;
@@ -361,12 +359,12 @@ input, textarea {
 	width: 50px;
 	height: 60px;
 	top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-size: contain;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-size: contain;
 }
-
+	
 #forecast {
 	font-family: sans-serif;
 	font-weight: lighter;
@@ -411,7 +409,7 @@ input, textarea {
 	background-repeat: no-repeat;
 	padding-left: 20px;
 	background-color:transparent;
-	}
+}
 
 	#cityName {
 	font-family: sans-serif;
