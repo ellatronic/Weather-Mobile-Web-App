@@ -68,5 +68,21 @@ $(document).ready(function(){
 });	
 })
 
+var searchZip = getUrlParameter('zip');
+
+// This method runs when the HTML is loaded, everything else runs before the 
+// HMTL is loaded
+$(document).ready(function(){
+	$('#zipcode').val(searchZip);
+	getWeather(searchZip);
+
+	$('#button').click(search);
+	$('#zipcode').keydown(function(e) {
+  		if(e.which == 13) {
+			search();
+  		}
+	});	
+})
+
 
 
