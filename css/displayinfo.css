@@ -3,15 +3,14 @@ body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldse
 }
 
 html {
-	background-color:black;
-	background: url(../img/) no-repeat center center fixed;
+	background-color:#0B7BCE;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	position:fixed;
 	overflow:hidden;	
-	background-color: #0C76BF;	
+	background-color: #0B7BCE;	
 }
 
 #displayweather {
@@ -25,8 +24,7 @@ html {
 }
 
 div.displayweather {
-    background-color: black;
-    opacity: 0.6;
+    background-color: #0B7BCE;
 }
 
 #fnumber {
@@ -90,7 +88,7 @@ div.displayweather {
 #zipBox {
 	padding-left: 20%;
 	font-family: sans-serif;
-	color: black;
+	color: #0B7BCE;
 }
 
 #button {
@@ -104,7 +102,7 @@ div.displayweather {
 	height: 40px;
 }
 
-input, textarea {
+input, textarea, name {
 	position: relative;
 	text-align: center;
 	outline: none;
@@ -118,7 +116,7 @@ input, textarea {
 	border-top-right-radius: 2px;
 	border-bottom-right-radius: 2px;
 	border-bottom-left-radius: 2px;
-	color: aliceblue;	
+	color: white;	
 }
 
 .letter {
@@ -149,7 +147,7 @@ td {
 	float: none;
 	padding: 0;
 	font-weight: bold;
-	background-color: black;
+	background-color: #0B7BCE;
 }
 
 #weathericons {
@@ -285,7 +283,7 @@ body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldse
 	padding: 1%;
 	float: right;
 	font-family: sans-serif;
-	color: black;
+	color: #0B7BCE;
 }
 
 div #mainIcon {
@@ -370,7 +368,7 @@ td {
 	float: none;
 	padding: 0;
 	font-weight: bold;
-	background-color: black;
+	background-color: #0B7BCE;
 }
 
 #weathericons {
@@ -384,7 +382,7 @@ td {
 
 .weather-icons {
 	position: relative;
-	color: black;
+	color: #0B7BCE;
 	font-family: sans-serif;
 	font-size: 20px;
 	padding-left: 1.6%;
@@ -401,5 +399,9 @@ img {
 	margin: 0;
 	width: auto;
 	padding-left: 2%;
+}
+	
+	html {	
+	background-color: #383839;	
 }
 }
